@@ -1,15 +1,12 @@
 const express = require("express")
 const app = express()
 
-app.use((req, res, next) => {
-    console.log(req.headers)
-    next()
-})
+var cors = require("cors");
+app.use(cors());
 
-app.get("/", (req, res) => {
-
+app.get("/api/whoami/", (req, res) => {
     res.json({
-        "ipaddress": req.ip,
+        ipaddress: req.ip,
         "language": req.headers["accept-language"],
         "software": req.headers["user-agent"]
     })
