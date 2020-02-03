@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get("/api/whoami/", (req, res) => {
     res.json({
-        ipaddress: req.ip,
+        ipaddress: req.ip, // ipaddress: req.header('x-forwarded-for').split(',')[1]
         "language": req.headers["accept-language"],
         "software": req.headers["user-agent"]
     })
