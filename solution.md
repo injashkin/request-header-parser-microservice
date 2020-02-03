@@ -96,9 +96,7 @@ app.listen(3000)
 
 
 
-## Что происходит при выполнении HTTP-запросов?
 
-как браузеры выполняют запросы к серверам с использованием протокола HTTP/1.1.
 
 * [Что такое Http заголовки (Http headers). Общая теория.](http://borpost.ru/php/chto-takoe-http-zagolovki-http-headers-obshhaya-teoriya/)
 * [Руководство по Node.js, часть 8: протоколы HTTP и WebSocket](https://habr.com/ru/company/ruvds/blog/424557/)
